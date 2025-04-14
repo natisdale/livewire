@@ -1,0 +1,113 @@
+/* CSS file (styles.css) */
+@font-face {
+    font-family: "Aeonik";
+    src: url('../fonts/AeonikTRIAL-Regular.otf') format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "AeonikTRIAL-Regular";
+    src: url('../fonts/AeonikTRIAL-Regular.otf') format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Aeonik-Black";
+    src: url('../fonts/AeonikTRIAL-Black.otf') format("opentype");
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: "SignalMonoWeb-Light-Trial";
+    src: url("fonts/SignalMonoWeb-Light-Trial.woff2")
+}
+:root {
+    --font-Aeonik: Aeonik, AeonikTRIAL-Regular, Arial, sans-serif;
+    --font-Aeonik-Black: Aeonik-Black, Arial, sans-serif;
+    --font-SignalMono: SignalMono, Arial, sans-serif;
+    --font-SignalMono-Light: "Signal Mono Light", SignalMono-Light, SignalMonoWeb-Light-Trial, Arial, sans-serif;
+    --font-SignalMono-Medium: SignalMono-Medium, Arial, sans-serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-brand-silver: #C3CDD6;
+    --color-brand-orange: #F38971;
+    --color-brand-blue: #1F384F;
+}
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* box-sizing above based on https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+
+/*
+* typography defaults
+*/
+body {
+    font-family: var(--font-Aeonik);
+    font-weight: 400;
+    color:black;
+    font-size: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-Aeonik-Black);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: clamp(4.1875rem,1.1161rem + 15.3571vw,14.9375rem);
+    font-weight: 900;
+}
+h2 {
+    font-size: clamp(2.75rem,2.2438rem + 2.1596vw,4.1875rem);
+}
+h5 {
+    font-size: 1.3rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+nav {
+    font-family: var(--font-SignalMono-Light);
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .15rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav li {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: .25rem 0;
+}
+nav li:hover {
+    border-bottom: 2px solid var(--color-brand-orange);
+}
+.legal {
+    font-size: .75rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*
+* component
+*/
+.compoenet img {
+    max-width: initial;
+}
+.component__image {
+    border: 1px solid #ccc;
+    overflow-x: scroll;
+}
+.component__code {
+    border: 1px solid #ccc;
+}
