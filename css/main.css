@@ -5,25 +5,29 @@
     font-display: swap;
 }
 @font-face {
-    font-family: "AeonikTRIAL-Regular";
-    src: url('../fonts/AeonikTRIAL-Regular.otf') format("opentype");
-    font-display: swap;
-}
-@font-face {
     font-family: "Aeonik-Black";
     src: url('../fonts/AeonikTRIAL-Black.otf') format("opentype");
     font-weight: 900;
     font-display: swap;
 }
 @font-face {
-    font-family: "SignalMonoWeb-Light-Trial";
+    font-family: "SignalMono";
+    src: url("fonts/SignalMonoWeb-Regular-Trial.woff2")
+}
+@font-face {
+    font-family: "SignalMono-Light";
     src: url("fonts/SignalMonoWeb-Light-Trial.woff2")
 }
+@font-face {
+    font-family: "SignalMono-ExtraLight";
+    src: url("fonts/SignalMonoWeb-ExtraLight-Trial.woff2")
+}
 :root {
-    --font-Aeonik: Aeonik, AeonikTRIAL-Regular, Arial, sans-serif;
+    --font-Aeonik: Aeonik, Arial, sans-serif;
     --font-Aeonik-Black: Aeonik-Black, Arial, sans-serif;
     --font-SignalMono: SignalMono, Arial, sans-serif;
-    --font-SignalMono-Light: "Signal Mono Light", SignalMono-Light, SignalMonoWeb-Light-Trial, Arial, sans-serif;
+    --font-SignalMono-Light: SignalMono-Light, Arial, sans-serif;
+    --font-SignalMono-Light: SignalMono-ExtraLight, Arial, sans-serif;
     --font-SignalMono-Medium: SignalMono-Medium, Arial, sans-serif;
     --color-black: #000;
     --color-white: #fff;
@@ -49,6 +53,7 @@ body {
     font-family: var(--font-Aeonik);
     font-weight: 400;
     color:black;
+    background-color: var(--color-white);
     font-size: 1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -58,23 +63,32 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 h1 {
-    font-size: clamp(4.1875rem,1.1161rem + 15.3571vw,14.9375rem);
+    font-size: clamp(3.125rem, 2.2667rem + 3.662vw, 5.5625rem);
     font-weight: 900;
+    line-height: clamp(3rem, 2.142rem + 3.662vw, 5.438rem);
+}
+h1 > span {
+    font-size: clamp(4.1875rem,1.1161rem + 15.3571vw,14.9375rem);
+    display: inline-block;
+    line-height: clamp(5rem, 6rem + 6vw, 12rem);
+
 }
 h2 {
     font-size: clamp(2.75rem,2.2438rem + 2.1596vw,4.1875rem);
 }
+h3,
+h4,
 h5 {
     font-size: 1.3rem;
     background-color: var(--color-black);
     color: var(--color-white);
 }
 
+/*
+* Main Navigation
+*/
 nav {
-    font-family: var(--font-SignalMono-Light);
-    text-transform: uppercase;
-    font-size: .9rem;
-    letter-spacing: .15rem;
+
     background-color: var(--color-black);
     color: var(--color-white);
 }
@@ -84,11 +98,16 @@ nav ul {
 }
 nav li {
     display: inline-block;
-    padding: .5rem 1rem;
-    margin: .25rem 0;
+    font-family: var(--font-SignalMono-ExtraLight);
+    text-transform: uppercase;
+    font-size: .82rem;
+    letter-spacing: .25rem;
+    padding: .5rem 0;
+    margin: .25rem 1rem;
 }
-nav li:hover {
-    border-bottom: 2px solid var(--color-brand-orange);
+nav li:hover,
+nav li:active {
+    border-bottom: 1px solid var(--color-brand-orange);
 }
 .legal {
     font-size: .75rem;
@@ -101,12 +120,19 @@ img {
 /*
 * component
 */
-.compoenet img {
+.component {
+    margin: 3rem 0;
+}
+.component__name {
+    background-color: var(--color-brand-orange);
+    color: var(--color-white)
+}
+.component img {
     max-width: initial;
 }
 .component__image {
     border: 1px solid #ccc;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .component__code {
     border: 1px solid #ccc;
