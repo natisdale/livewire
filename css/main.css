@@ -69,7 +69,7 @@ h1 {
 }
 h1 > span {
     font-size: clamp(4.1875rem,1.1161rem + 15.3571vw,14.9375rem);
-    display: inline-block;
+    display: block;
     line-height: clamp(5rem, 6rem + 6vw, 12rem);
 
 }
@@ -117,6 +117,10 @@ img {
     display: block;
 }
 
+.hero {
+    text-align: center;
+    padding: 5rem 0 4rem 0;
+}
 /*
 * component
 */
