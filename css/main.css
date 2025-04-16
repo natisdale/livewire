@@ -116,6 +116,28 @@ img {
     max-width: 100%;
     display: block;
 }
+/*
+* banner 
+*/
+.banner {
+    background-color: var(--color-brand-orange);
+    text-align: center;
+    display: relative;
+    padding: .5rem 0;
+}
+.banner a {
+    color: var(--color-black);
+    font-family: var(--font-SignalMono-Light);
+    font-size: 1rem;
+}
+.banner a:active,
+.banner a:hover {
+    text-decoration: none;
+}
+.close {
+    position: absolute;
+    right: 1.5rem;
+}
 
 .hero {
     text-align: center;
