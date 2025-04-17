@@ -12,22 +12,22 @@
 }
 @font-face {
     font-family: "SignalMono";
-    src: url("fonts/SignalMonoWeb-Regular-Trial.woff2")
+    src: url("../fonts/SignalMonoWeb-Regular-Trial.woff2") format("woff2");
 }
 @font-face {
     font-family: "SignalMono-Light";
-    src: url("fonts/SignalMonoWeb-Light-Trial.woff2")
+    src: url("../fonts/SignalMonoWeb-Light-Trial.woff2") format("woff2");
 }
 @font-face {
     font-family: "SignalMono-ExtraLight";
-    src: url("fonts/SignalMonoWeb-ExtraLight-Trial.woff2")
+    src: url("../fonts/SignalMonoWeb-ExtraLight-Trial.woff2") format("woff2");
 }
 :root {
     --font-Aeonik: Aeonik, Arial, sans-serif;
     --font-Aeonik-Black: Aeonik-Black, Arial, sans-serif;
     --font-SignalMono: SignalMono, Arial, sans-serif;
-    --font-SignalMono-Light: SignalMono-Light, Arial, sans-serif;
-    --font-SignalMono-Light: SignalMono-ExtraLight, Arial, sans-serif;
+    --font-SignalMono-Light: SignalMono-Light, SignalMonoWeb-Light-Trial, Arial, sans-serif;
+    --font-SignalMono-ExtraLight: SignalMono-ExtraLight, Arial, sans-serif;
     --font-SignalMono-Medium: SignalMono-Medium, Arial, sans-serif;
     --color-black: #000;
     --color-white: #fff;
@@ -120,6 +120,8 @@ img {
 * banner 
 */
 .banner {
+    font-family: var(--font-SignalMono-Light);
+    font-size: 1rem;
     background-color: var(--color-brand-orange);
     text-align: center;
     display: relative;
@@ -127,8 +129,6 @@ img {
 }
 .banner a {
     color: var(--color-black);
-    font-family: var(--font-SignalMono-Light);
-    font-size: 1rem;
 }
 .banner a:active,
 .banner a:hover {
