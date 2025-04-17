@@ -150,8 +150,9 @@ img {
     margin: 3rem 0;
 }
 .component__name {
-    background-color: var(--color-brand-orange);
-    color: var(--color-white)
+    background-color: var(--color-brand-blue);
+    color: var(--color-white);
+    padding: 1rem;
 }
 .component img {
     max-width: initial;
