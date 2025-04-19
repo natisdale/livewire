@@ -84,6 +84,40 @@ h5 {
     color: var(--color-white);
 }
 
+.button {
+    display: inline-block;
+    border: 2px solid var(--color-brand-orange);
+    padding: .8rem 1rem;
+    width: auto;
+    font-family: var(--font-SignalMono-Light);
+    font-size: .9rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+.button--primary,
+.button:hover {
+    background-color: var(--color-brand-orange);
+}
+.button--primary:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+label {
+    font-family: var(--font-SignalMono-Light);
+    font-size: .9rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+}
+input[type="radio"] {
+    display: inline-block;
+    border-radius: 50;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid var(--color-black)
+}
+input[type="radio"]:checked {
+    box-shadow:0 0 0 2px var(--color-brand-orange);
+}
 /*
 * page-header
 */
@@ -149,6 +183,8 @@ h5 {
 .nav-main li {
     display: inline-block;
     font-family: var(--font-SignalMono);
+    font-size: .82rem;
+    text-transform: uppercase;
     letter-spacing: .25rem;
     padding: .5rem 0;
     margin: .25rem 1rem;
