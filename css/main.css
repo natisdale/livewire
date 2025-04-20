@@ -94,6 +94,8 @@ h5 {
     font-size: .9rem;
     letter-spacing: .15rem;
     text-transform: uppercase;
+    transition-property: background-color, color, border-color;
+    transition-duration: 1s;
 }
 a.button {
     text-decoration: none;
@@ -323,7 +325,21 @@ input[type="radio"]:checked {
     padding: .75rem;
     font-size: 1.5rem;
 }
-
+/*
+* media-section
+*/
+.media-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.media-section video {
+    width: 100%;
+    margin: 1rem 0;
+}
+.media-section .button {
+    width: auto;
+    margin: 1rem auto;
+}
 /*
 * component
 */
