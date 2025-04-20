@@ -233,10 +233,11 @@ input[type="radio"]:checked {
 .feature {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 1rem 3rem;
+    gap: 2rem;
 }
 .feature__info,
 .feature__image {
-    padding: 1rem;
 }
 .feature__image img {
     width: 100%;
@@ -278,7 +279,7 @@ input[type="radio"]:checked {
         height: auto;
     }
     .feature {
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 4fr 7fr;
     }
 
 }
