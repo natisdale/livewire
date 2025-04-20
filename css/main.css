@@ -94,12 +94,17 @@ h5 {
     letter-spacing: .15rem;
     text-transform: uppercase;
 }
+a.button {
+    text-decoration: none;
+    color: var(--color-black);
+}
 .button--primary,
 .button:hover {
     background-color: var(--color-brand-orange);
 }
 .button--primary:hover {
     background-color: var(--color-black);
+    border-color: var(--color-black);
     color: var(--color-white);
 }
 label {
@@ -221,6 +226,21 @@ input[type="radio"]:checked {
     text-align: center;
     padding: 5rem 0 4rem 0;
 }
+
+/*
+* Feature
+*/
+.feature {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.feature__info,
+.feature__image {
+    padding: 1rem;
+}
+.feature__image img {
+    width: 100%;
+}
 /*
 * component
 */
@@ -257,4 +277,8 @@ input[type="radio"]:checked {
         position: inherit;
         height: auto;
     }
+    .feature {
+        grid-template-columns: 2fr 3fr;
+    }
+
 }
