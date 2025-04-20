@@ -273,9 +273,10 @@ input[type="radio"]:checked {
 .stay-informed {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 3rem;
     padding: 2rem;
     align-items: center;
-    width: 60%;
+    width: 80%;
     margin: 1rem auto;
 }
 .stay-informed button {
