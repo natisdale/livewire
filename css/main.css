@@ -33,6 +33,7 @@
     --color-white: #fff;
     --color-gray: #BFBFBF;
     --color-gray-dark: rgb(153, 153, 153);
+    --color-near-black: #121212;
     --color-brand-silver: #C3CDD6;
     --color-brand-orange: #F38971;
     --color-brand-blue: #1F384F;
@@ -324,10 +325,62 @@ input[type="radio"]:checked {
     padding: 1rem;
     border: 1px solid red;
 }
+.carousel ol {
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 0;
+    list-style: none;
+}
 .slide {
     text-align: center;
     border: 1px solid green;
 }
+.slide .button {
+    margin: 1rem .25rem;
+}
+.slide__subtitle {
+    font-family: var(--font-Aeonik-Black);
+    font-size: 2rem;
+    margin-top: 0;
+}
+.slide__specs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.carousel svg{
+    position: absolute;
+    top: 5px;
+}
+.detail-list__pricing {
+    border-right: 1px solid black;
+    padding-right: 2rem;
+}
+.detail-list__pricing p {
+    align-content: center;
+    font-family: var(--font-Aeonik-Black);
+    font-size: 2.5rem;
+    margin: 0;
+}
+.detail-list__pricing a {
+    font-family: var(--font-Aeonik);
+    font-size: .8rem;
+    text-decoration: underline;
+    color: var(--color-near-black);
+}
+.detail-list__specs {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 2rem);
+}
+.detail-list__specs dt {
+    grid-row: 1;
+    margin: 0 1rem;
+}
+.detail-list__specs dd {
+    grid-row: 2;
+}
+
 /*
 * Feature
 */
@@ -340,6 +393,7 @@ input[type="radio"]:checked {
 .feature__image img {
     width: 100%;
 }
+
 /*
 * tiles
 */
