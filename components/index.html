@@ -165,8 +165,8 @@
             </div>
             <div class="component__code">
                 <div class="carousel">
-                    <ol>
-                        <li class="slide">
+                    <ol class="carousel__viewport">
+                        <li class="slide" id="carousel__slide1">
                             <h2 class="slide__title">S2 ALPINISTA</h2>
                             <p class="slide__subtitle">Electric Sport Standard</p>
                             <div class="slide__specs">
@@ -197,16 +197,22 @@
                                     <dd>10.5 kWh</dd>
                                 </dl>                                
                             </div>
-                            <a href="#!" class="button button--primary">Explore</a>
-                            <a href="#!" class="button">Buy Now</a>
                             <img src="https://livewire.widen.net/content/rqjjb1ebkz/web/2025-alpinista-m56-motorcycle-01.png?w=1600&q=80" alt="" >
+                            <div class="button-row">
+                                <a href="#!" class="button button--primary">Explore</a>
+                                <a href="#!" class="button">Buy Now</a>
+                            </div>
                             <fieldset>
                                 <label for="alpinista-glacier-silver"><input type="radio" id="alpinista-glacier-silver" name="color" value="glacier silver" checked="">Glacier Silver</label>
                                 <label for="alpinista-asphalt-black"><input type="radio" id="alpinista-asphalt-black" name="color" value="asphalt-black">Asphalt Black</label>
                             </fieldset>
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide4" class="carousel__prev"><i class="fa-solid fa-chevron-left"></i></a>
+                                <a href="#carousel__slide2" class="carousel__next"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
                         </li>
 
-                        <li class="slide">
+                        <li class="slide" id="carousel__slide2">
                             <h2 class="slide__title">S2 Mulholland</h2>
                             <p class="slide__subtitle">Electric Performance Cruiser</p>
                             <div class="slide__specs">
@@ -236,17 +242,23 @@
                                     <dd>10.5 kWh</dd>
                                 </dl>                                
                             </div>
-                            <a href="#!" class="button button--primary">Explore</a>
-                            <a href="#!" class="button">Buy Now</a>
                             <img src="https://livewire.widen.net/content/nrboh7gio6/web/2024_S2MH_White_00000.png?w=1600&q=80" alt="" >
+                            <div class="button-row">
+                                <a href="#!" class="button button--primary">Explore</a>
+                                <a href="#!" class="button">Buy Now</a>
+                            </div>
                             <fieldset>
                                 <label for="lunar-white-gray"><input type="radio" id="lunar-white-gray" name="color" value="glacier silver" checked="" >Lunar White / Gray</label>
                                 <label for="liquid-black-red"><input type="radio" id="liquid-black-red" name="color" value="liquid-black-red">Liquid Black / Red</label>
                                 <label for="liquid-black-black"><input type="radio" id="liquid-black-black" name="color" value="liquid-black-black">Liquid Black / Black</label>
                             </fieldset>
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide1" class="carousel__prev"><i class="fa-solid fa-chevron-left"></i></a>
+                                <a href="#carousel__slide3" class="carousel__next"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
                         </li>
 
-                        <li class="slide">
+                        <li class="slide" id="carousel__slide3">
                             <h2 class="slide__title">S2 DEL MAR</h2>
                             <p class="slide__subtitle">Electric Street Tracker</p>
                             <div class="slide__specs">
@@ -276,25 +288,31 @@
                                     <dd>10.5 kWh</dd>
                                 </dl>                                
                             </div>
-                            <a href="#!" class="button button--primary">Explore</a>
-                            <a href="#!" class="button">Buy Now</a>
                             <img src="https://livewire.widen.net/content/vgq4ftssnq/web/2023_DelMar_MillraceBlue_000.webp?w=1600&q=80" alt="" >
+                            <div class="button-row">
+                                <a href="#!" class="button button--primary">Explore</a>
+                                <a href="#!" class="button">Buy Now</a>
+                            </div>
                             <fieldset>
                                 <label for="millrace-blue"><input type="radio" id="millrace-blue" name="color" value="millrace-blue" checked="">Millrace Blue</label>
                                 <label for="nimbus-gray"><input type="radio" id="nimbus-gray" name="color" value="nimbus-gray">Nimbus Gray</label>
                                 <label for="nightfall-blue"><input type="radio" id="nightfall-blue" name="color" value="nightfall-blue">Nightfall Blue</label>
                                 <label for="del-mar-asphalt-black"><input type="radio" id="del-mar-asphalt-black" name="color" value="asphalt-black">Asphalt Black</label>
                             </fieldset>
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide2" class="carousel__prev"><i class="fa-solid fa-chevron-left"></i></a>
+                                <a href="#carousel__slide4" class="carousel__next"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
                         </li>
 
-                        <li class="slide">
+                        <li class="slide" id="carousel__slide4">
                             <h2 class="slide__title">LIVEWIRE ONE</h2>
                             <p class="slide__subtitle">Electric Sport Tourer</p>
                             <div class="slide__specs">
                                 <div>
                                     <div class="detail-list__pricing">
                                         <p class="detail-list__msrp">
-                                            $$22,799
+                                            $22,799
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
                                         </p>
                                         <a class="detail-list__incentives">Check for incentives</a>
@@ -317,16 +335,38 @@
                                     <dd>15.4 kWh</dd>
                                 </dl>                                
                             </div>
-                            <a href="#!" class="button button--primary">Explore</a>
-                            <a href="#!" class="button">Buy Now</a>
                             <img src="https://livewire.widen.net/content/rtg5n3polf/web/2023_LiveWire_ONE_Liquid+Black_000_M.webp?w=1600&q=80" alt="" >
+                            <div class="button-row">
+                                <a href="#!" class="button button--primary">Explore</a>
+                                <a href="#!" class="button">Buy Now</a>
+                            </div>
                             <fieldset>
                                 <label for="one-liquid-black"><input type="radio" id="one-liquid-black" name="color" value="liquid-black" checked="">Liquid Black</label>
                                 <label for="one-horizon-white"><input type="radio" id="one-horizon-white" name="color" value="horizon-white" >Horizon White</label>
                                 <label for="one-nebula-red"><input type="radio" id="one-nebula-red" name="color" value="nebula-red">Nebula Red</label>
                             </fieldset>
+                            <div class="carousel__snapper">
+                                <a href="#carousel__slide3" class="carousel__prev"><i class="fa-solid fa-chevron-left"></i></a>
+                                <a href="#carousel__slide1" class="carousel__next"><i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
                         </li>
                     </ol>
+                    <aside class="carousel__navigation">
+                        <ol class="carousel__navigation-list">
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                            </li>
+                        </ol>
+                      </aside>
                 </div>
             </div>
         </article>
