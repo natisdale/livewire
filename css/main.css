@@ -322,7 +322,6 @@ input[type="radio"]:checked {
 */
 .carousel {
     padding: 1rem;
-    border: 1px solid red;
 }
 .carousel ol {
     display: flex;
@@ -332,7 +331,6 @@ input[type="radio"]:checked {
 }
 .slide {
     text-align: center;
-    border: 1px solid green;
 }
 .slide .button {
     margin: 1rem .25rem;
@@ -344,6 +342,10 @@ input[type="radio"]:checked {
 }
 .slide fieldset {
     border: none;
+    visibility: hidden;
+}
+.slide img {
+    width: 65rem;
 }
 .slide__specs {
     display: flex;
