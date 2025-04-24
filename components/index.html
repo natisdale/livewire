@@ -5,7 +5,7 @@
         <title>Components | LiveWire</title>
         <link rel="stylesheet" href="../css/normalize.css" >
         <link rel="stylesheet" href="../css/main.css" >
-        <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="../assets/fontawesome/css/fontawesome.min.css" >
         <link rel="stylesheet" href="../assets/fontawesome/css/solid.min.css" >
         <link rel="stylesheet" href="../assets/fontawesome/css/regular.min.css" >
         <link rel="stylesheet" href="../assets/fontawesome/css/brands.min.css" >
@@ -48,10 +48,10 @@
             <div class="component__code">
                 <a class="button" href="#!">buy now</a>
                 <a class="button button--primary" href="#!">explore</a>
-                <form>
+                <fieldset>
                     <label for="glacier-silver"><input type="radio" id="glacier-silver" name="color" value="glacier silver" checked="">Glacier Silver</label>
                     <label for="asphalt-black"><input type="radio" id="asphalt-black" name="color" value="black">Asphalt Black</label>
-                </form>
+                </fieldset>
             </div>
         </article>
 
@@ -137,9 +137,6 @@
             <div class="component__code">
                 <ul class="image-accordion">
                     <li class="image-accordion__item" style="background-image: url('https://livewire.widen.net/content/ivb6ftmajs/web/HP-Carousel-S2AP-Build.png');">
-                        <!-- <picture>
-                            <img src="https://livewire.widen.net/content/ivb6ftmajs/web/HP-Carousel-S2AP-Build.png" alt="" >
-                        </picture> -->
                         <div class="image-accordian__content">
                             <h2>The S2<br>ALPINISTA</h2>
                             <p>The electric sport standard.</p>
@@ -147,9 +144,6 @@
                         </div>
                     </li>
                     <li class="image-accordion__item" style="background-image: url('https://livewire.widen.net/content/f3swxizxlg/web/HP-Carousel-S2-Incentive.png');">
-                        <!-- <picture>
-                            <img src="https://livewire.widen.net/content/f3swxizxlg/web/HP-Carousel-S2-Incentive.png" alt="" >
-                        </picture> -->
                         <h2>Limited-time<br>1.49% APR*</h2>
                         <p>Special financing eligible for all S2<br>models until March 31.</p>
                         <a href="#!" class="button">LEARN MORE</a>
@@ -161,8 +155,181 @@
                     </li>
                 </ul>
             </div>
-
         </article>
+
+        <article class="component">
+            <h3 class="component__name">Carousel</h3>
+            <div class="component__image">
+                <img src="img/carousel--mobile.png" alt="carousel small" >
+                <img src="img/carousel.png" alt="carousel large" >
+            </div>
+            <div class="component__code">
+                <div class="carousel">
+                    <ol>
+                        <li class="slide">
+                            <h2 class="slide__title">S2 ALPINISTA</h2>
+                            <p class="slide__subtitle">Electric Sport Standard</p>
+                            <div class="slide__specs">
+                                <div>
+                                    <div class="detail-list__pricing">
+                                        <p class="detail-list__msrp">
+                                            $15,999
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                        </p>
+                                        <a class="detail-list__incentives">Check for incentives</a>
+                                    </div>
+                                </div>
+                                <dl class="detail-list__specs">
+                                    <dt>
+                                        City Range
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>120 Mi</dd>
+                                    <dt>0-60 mph</dt>
+                                    <dd>3 Sec</dd>
+                                    <dt>
+                                        Level 2 Charge
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>78 Min</dd>
+                                    <dt>Energy</dt>
+                                    <dd>10.5 kWh</dd>
+                                </dl>                                
+                            </div>
+                            <a href="#!" class="button button--primary">Explore</a>
+                            <a href="#!" class="button">Buy Now</a>
+                            <img src="https://livewire.widen.net/content/rqjjb1ebkz/web/2025-alpinista-m56-motorcycle-01.png?w=1600&q=80" alt="" >
+                            <fieldset>
+                                <label for="alpinista-glacier-silver"><input type="radio" id="alpinista-glacier-silver" name="color" value="glacier silver" checked="">Glacier Silver</label>
+                                <label for="alpinista-asphalt-black"><input type="radio" id="alpinista-asphalt-black" name="color" value="asphalt-black">Asphalt Black</label>
+                            </fieldset>
+                        </li>
+
+                        <li class="slide">
+                            <h2 class="slide__title">S2 Mulholland</h2>
+                            <p class="slide__subtitle">Electric Performance Cruiser</p>
+                            <div class="slide__specs">
+                                <div>
+                                    <div class="detail-list__pricing">
+                                        <p class="detail-list__msrp">
+                                            $16,499
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                        </p>
+                                        <a class="detail-list__incentives">Check for incentives</a>
+                                    </div>
+                                </div>
+                                <dl class="detail-list__specs">
+                                    <dt>
+                                        City Range
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>120 Mi</dd>
+                                    <dt>0-60 mph</dt>
+                                    <dd>3.3 Sec</dd>
+                                    <dt>
+                                        Level 2 Charge
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>78 Min</dd>
+                                    <dt>Energy</dt>
+                                    <dd>10.5 kWh</dd>
+                                </dl>                                
+                            </div>
+                            <a href="#!" class="button button--primary">Explore</a>
+                            <a href="#!" class="button">Buy Now</a>
+                            <img src="https://livewire.widen.net/content/nrboh7gio6/web/2024_S2MH_White_00000.png?w=1600&q=80" alt="" >
+                            <fieldset>
+                                <label for="lunar-white-gray"><input type="radio" id="lunar-white-gray" name="color" value="glacier silver" checked="" >Lunar White / Gray</label>
+                                <label for="liquid-black-red"><input type="radio" id="liquid-black-red" name="color" value="liquid-black-red">Liquid Black / Red</label>
+                                <label for="liquid-black-black"><input type="radio" id="liquid-black-black" name="color" value="liquid-black-black">Liquid Black / Black</label>
+                            </fieldset>
+                        </li>
+
+                        <li class="slide">
+                            <h2 class="slide__title">S2 DEL MAR</h2>
+                            <p class="slide__subtitle">Electric Street Tracker</p>
+                            <div class="slide__specs">
+                                <div>
+                                    <div class="detail-list__pricing">
+                                        <p class="detail-list__msrp">
+                                            $16,249
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                        </p>
+                                        <a class="detail-list__incentives">Check for incentives</a>
+                                    </div>
+                                </div>
+                                <dl class="detail-list__specs">
+                                    <dt>
+                                        City Range
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>113 Mi</dd>
+                                    <dt>0-60 mph</dt>
+                                    <dd>3 Sec</dd>
+                                    <dt>
+                                        Level 2 Charge
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>78 Min</dd>
+                                    <dt>Energy</dt>
+                                    <dd>10.5 kWh</dd>
+                                </dl>                                
+                            </div>
+                            <a href="#!" class="button button--primary">Explore</a>
+                            <a href="#!" class="button">Buy Now</a>
+                            <img src="https://livewire.widen.net/content/vgq4ftssnq/web/2023_DelMar_MillraceBlue_000.webp?w=1600&q=80" alt="" >
+                            <fieldset>
+                                <label for="millrace-blue"><input type="radio" id="millrace-blue" name="color" value="millrace-blue" checked="">Millrace Blue</label>
+                                <label for="nimbus-gray"><input type="radio" id="nimbus-gray" name="color" value="nimbus-gray">Nimbus Gray</label>
+                                <label for="nightfall-blue"><input type="radio" id="nightfall-blue" name="color" value="nightfall-blue">Nightfall Blue</label>
+                                <label for="del-mar-asphalt-black"><input type="radio" id="del-mar-asphalt-black" name="color" value="asphalt-black">Asphalt Black</label>
+                            </fieldset>
+                        </li>
+
+                        <li class="slide">
+                            <h2 class="slide__title">LIVEWIRE ONE</h2>
+                            <p class="slide__subtitle">Electric Sport Tourer</p>
+                            <div class="slide__specs">
+                                <div>
+                                    <div class="detail-list__pricing">
+                                        <p class="detail-list__msrp">
+                                            $$22,799
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                        </p>
+                                        <a class="detail-list__incentives">Check for incentives</a>
+                                    </div>
+                                </div>
+                                <dl class="detail-list__specs">
+                                    <dt>
+                                        City Range
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>146 Mi</dd>
+                                    <dt>0-60 mph</dt>
+                                    <dd>3.3 Sec</dd>
+                                    <dt>
+                                        DC Fast Charge
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" fill="none" ><path fill="currentColor" d="M7 1.844c3.227 0 5.906 2.652 5.906 5.906A5.9 5.9 0 0 1 7 13.656 5.88 5.88 0 0 1 1.094 7.75 5.9 5.9 0 0 1 7 1.844m0-.875C3.254.969.219 4.03.219 7.75A6.78 6.78 0 0 0 7 14.531c3.719 0 6.781-3.035 6.781-6.781C13.781 4.031 10.72.969 7 .969m-.984 9.406a.333.333 0 0 0-.328.328v.219c0 .191.136.328.328.328h1.968a.33.33 0 0 0 .329-.328v-.219a.35.35 0 0 0-.329-.328h-.328V6.547a.35.35 0 0 0-.328-.328H6.016a.33.33 0 0 0-.328.328v.219c0 .191.136.328.328.328h.328v3.281zM7 3.813a.88.88 0 0 0-.875.874c0 .493.383.875.875.875a.88.88 0 0 0 .875-.875A.9.9 0 0 0 7 3.813"></path></svg>
+                                    </dt>
+                                    <dd>60 Min</dd>
+                                    <dt>Energy</dt>
+                                    <dd>15.4 kWh</dd>
+                                </dl>                                
+                            </div>
+                            <a href="#!" class="button button--primary">Explore</a>
+                            <a href="#!" class="button">Buy Now</a>
+                            <img src="https://livewire.widen.net/content/rtg5n3polf/web/2023_LiveWire_ONE_Liquid+Black_000_M.webp?w=1600&q=80" alt="" >
+                            <fieldset>
+                                <label for="one-liquid-black"><input type="radio" id="one-liquid-black" name="color" value="liquid-black" checked="">Liquid Black</label>
+                                <label for="one-horizon-white"><input type="radio" id="one-horizon-white" name="color" value="horizon-white" >Horizon White</label>
+                                <label for="one-nebula-red"><input type="radio" id="one-nebula-red" name="color" value="nebula-red">Nebula Red</label>
+                            </fieldset>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
         <article class="component">
             <h3 class="component__name">Feature</h3>
             <div class="component__image">
@@ -230,7 +397,7 @@
                             Visit our shop and explore new apparel, accessories, and replacement parts.
                         </p>
                         <div class="tile__image">
-                            <img src="https://livewire.widen.net/content/pfjct48vis/web/tile_s2ap_home_apparel.jpg" >
+                            <img src="https://livewire.widen.net/content/pfjct48vis/web/tile_s2ap_home_apparel.jpg" alt="" >
                         </div>
                     </div>
                 </div>
@@ -260,13 +427,6 @@
                         </button>
                         <label for="email">I agree to receive marketing communications from LiveWire.</label>
                     </form>
-                    <!-- <ul class="stay-informed__socials socials-list">
-                        <li class="socials-list__social-link"><a href="https://www.instagram.com/livewireev"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li class="socials-list__social-link"><a href="https://www.facebook.com/LiveWireEV"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="socials-list__social-link"><a href="https://www.youtube.com/c/livewireev"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li class="socials-list__social-link"><a href="https://open.spotify.com/user/31xk7t52ux36rjp3aa4tltvq6tnm?si=1844e6ac2bc14488"><i class="fa-brands fa-spotify"></i></a></li>
-                        <li class="socials-list__social-link"><a href="https://music.apple.com/us/curator/livewire-ev/1625943929"><i class="fa-solid fa-music"></i></a></li>
-                    </ul> -->
                     <ul class="stay-informed__socials socials-list">
                         <li class="socials-list__social-link">
                             <a href="https://www.instagram.com/livewireev">
@@ -306,7 +466,7 @@
             <div class="component__code">
                 <section class="media-section">
                     <video playsinline="" class="Video_video__9h5Ot" poster="https://livewire.widen.net/content/jpct9rfbog/web/home-page-2.0-video-poster.jpg" autoplay="" loop="">
-                        <source src="https://livewire.widen.net/content/2iufgdei87/mp4/230181_BrandHP_v02_PR422_mov_web_265.mp4" type="">
+                        <source src="https://livewire.widen.net/content/2iufgdei87/mp4/230181_BrandHP_v02_PR422_mov_web_265.mp4" >
                     </video>
                     <a href="#!" class="button">See Our Vision</a>
                 </section>
@@ -373,7 +533,7 @@
                             </p>
                         </div>
                         <form class="stay-informed__form">
-                            <input type="email" id="email" class="stay-informed__entry" placeholder="Enter your email">
+                            <input type="email" id="stay-informed-email" class="stay-informed__entry" placeholder="Enter your email">
                             <button type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"><path fill-rule="evenodd" d="M14.303 8.95 9.747 4.627l.801-.754L16.15 9.19l.4.378-.401.377-5.506 5.185-.798-.758 4.59-4.32H2.25v-1.1z" clip-rule="evenodd"></path></svg>
                             </button>
