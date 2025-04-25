@@ -322,7 +322,7 @@ input[type="radio"]:checked {
 */
 .carousel {
     position: relative;
-    padding-top: 65rem;
+    padding-top: 68rem;
 }
 .carousel ol {
     display: flex;
@@ -368,6 +368,7 @@ input[type="radio"]:checked {
     outline: 0;
     background-color: var(--color-brand-orange);
     align-content: center;
+    visibility: hidden;
 }
 .carousel__navigation {
     position: absolute;
@@ -417,10 +418,13 @@ input[type="radio"]:checked {
     visibility: hidden;
 }
 .slide img {
-    width: 65rem;
+    /* width: 65rem; */
+    width: 90%;
 }
 .slide__specs {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
     position: relative;
 }
@@ -435,12 +439,12 @@ input[type="radio"]:checked {
 .detail-list__pricing p {
     align-content: center;
     font-family: var(--font-Aeonik-Black);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
 }
 .detail-list__pricing a {
     font-family: var(--font-Aeonik);
-    font-size: .8rem;
+    font-size: .6rem;
     text-decoration: underline;
     color: var(--color-near-black);
 }
@@ -448,6 +452,8 @@ input[type="radio"]:checked {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, 2rem);
+    justify-content: center;
+    position: relative;
 }
 .detail-list__specs dt {
     grid-row: 1;
@@ -455,6 +461,10 @@ input[type="radio"]:checked {
 }
 .detail-list__specs dd {
     grid-row: 2;
+}
+.detail-list__specs dt,
+.detail-list__specs dd {
+    font-size: 1.2rem;
 }
 /*
 * Feature
@@ -709,6 +719,23 @@ input[type="radio"]:checked {
         width: clamp(25rem, 50%, 35rem);
         margin: 0 auto;
     }
+    .carousel {
+        padding-top: 65rem;
+    }
+    .slide__specs {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+    .detail-list__pricing {
+        padding-right: 2rem;
+    }
+    .detail-list__pricing p {
+        font-size: 2.5rem;
+    }
+    .detail-list__pricing a {
+        font-size: .8rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -724,6 +751,13 @@ input[type="radio"]:checked {
         visibility: visible;
         position: inherit;
         height: auto;
+    }
+    .carousel__navigation {
+        visibility: hidden;
+    }
+    .carousel__prev,
+    .carousel__next {
+        visibility: visible;
     }
     .feature {
         grid-template-columns: 4fr 7fr;
