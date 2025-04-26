@@ -227,6 +227,46 @@ input[type="radio"]:checked {
     border-bottom: 1px solid var(--color-brand-orange);
 }
 
+/*
+* nav-main__sub-menu
+*/
+.nav-main__sub-menu {
+    height: 100vh;
+}
+.sub-menu__categories {
+    background-color: var(--color-black);
+    height: 100%;
+    list-style-type: none;
+}
+.sub-menu__categories a {
+    font-family: var(--font-Aeonik);
+    font-size: 1.6rem;
+    color: var(--color-nimbus-gray);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.6rem 3rem;
+
+}
+.sub-menu__category {
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+    align-items: center;
+    border-bottom: none;
+}
+.sub-menu__category a {
+    font-family: var(--font-SignalMono-Light);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.sub-menu__category .fa-chevron-right {
+    color: var(--color-nimbus-gray);
+    margin-right: 2rem;
+}
+.sub-menu__panel {
+    visibility: hidden;
+}
 /* 
 * language-picker
 */
@@ -854,6 +894,59 @@ input[type="radio"]:checked {
         visibility: visible;
         position: inherit;
         height: auto;
+    }
+    .nav-main__sub-menu {
+        height: 480px;
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+    }
+    .sub-menu__category {
+        border-bottom: 1px solid var(--color-gray-dark);
+    }
+    .sub-menu__category--active {
+        background-color: var(--color-gray);
+    }
+    .sub-menu__category--active a {
+        color: var(--color-black);
+    }
+    .sub-menu__categories .sub-menu__category:last-child {
+        border-bottom: none;
+    }
+    .sub-menu__category .fa-chevron-right {
+        visibility: hidden;
+    }
+    .sub-menu__panel {
+        visibility: visible;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .app-list {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style-type: none;
+    }
+    .app-list__app a {
+        display: grid;
+        grid-template-columns: 1fr;
+        display: block;
+        text-decoration: none;
+        color: var(--color-black);
+        padding: 2.4rem 0;
+        text-align: center;
+        font-family: var(--font-SignalMono-Light);
+        font-size: 1rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+    }
+    .app-list__app img {
+        height: 220px;
+    }
+    .sub-menu__category:hover {
+        background-color: var(--color-gray);
+    }
+    .sub-menu__category:hover a {
+        color: var(--color-black)
     }
     .carousel__navigation {
         visibility: hidden;
