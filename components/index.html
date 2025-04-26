@@ -110,19 +110,22 @@
         <article class="languages">
             <h3 class="component__name">language-picker</h3>
             <div class="component__image">
-                <img src="imb/languages" alt="languages" >
+                <img src="img/language-picker.png" alt="languages" >
             </div>
             <div class="component__code">
                 <div class="language-picker">
+                    <div class="language-picker__header">
+                        <i class="fa-solid fa-x close"></i>
+                    </div>
                     <ul class="language-picker__regions">
                         <li class="region">
-                            North America
+                            <p>North America</p>
                             <ul class="nations">
-                                <li class="nation">
+                                <li class="nation nation--active">
                                     <img src="https://livewire.prod.acquia-sites.com/sites/default/files/market-icons/united-states_0_1.png" alt="United States" >
                                     <div>
                                         United States
-                                        <ul class="languages">
+                                        <ul class="languages active">
                                             <li class="language"><a href="#!">English</a></li>
                                         </ul>
                                     </div>
@@ -140,7 +143,7 @@
                             </ul>
                         </li>
                         <li class="region">
-                            Europe
+                            <p>Europe</p>
                             <ul class="nations">
                                 <li class="nation">
                                     <img src="https://livewire.prod.acquia-sites.com/sites/default/files/market-icons/germany_0_0_0.png" alt="Deutschland" >

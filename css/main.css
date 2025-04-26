@@ -33,6 +33,7 @@
     --color-white: #fff;
     --color-gray: #BFBFBF;
     --color-gray-dark: rgb(153, 153, 153);
+    --color-nimbus-gray: rgb(201, 201, 201);
     --color-near-black: #121212;
     --color-brand-silver: #C3CDD6;
     --color-brand-orange: #F38971;
@@ -226,6 +227,82 @@ input[type="radio"]:checked {
     border-bottom: 1px solid var(--color-brand-orange);
 }
 
+/* 
+* language-picker
+*/
+.language-picker {
+    background-color: black;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--color-nimbus-gray);
+    padding-top: 5rem;
+}
+.language-picker__header {
+    display: relative;
+}
+.language-picker .close {
+    color: var(--color-white);
+    font-size: 50;
+}
+.language-picker .region {
+    font-family: var(--font-Aeonik);
+    font-size: 2.8rem;
+}
+.language-picker .region > p {
+    margin: 1rem 0
+}
+.language-picker__regions,
+.language-picker .nations,
+.languages {
+    list-style: none;
+}
+.language-picker .nations {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem
+}
+.language-picker .nation {
+    font-family: var(--font-Aeonik);
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    
+}
+.language-picker .nation--active {
+    background-color: var(--color-white);
+    
+    border-radius: .25rem;
+    margin-right: 2rem;}
+.language-picker .nation--active * {
+    color: var(--color-black);
+}
+.language-picker .nation img {
+    height: 1.4rem;
+    float: left;
+}
+.language-picker .languages {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 1rem
+}
+.language-picker .language a {
+    text-decoration: none;
+    font-family: var(--font-SignalMono-Light);
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: var(--color-nimbus-gray);
+}
+.language-picker .language a:hover {
+    border-bottom: 1px solid var(--color-nimbus-gray);
+}
 /*
 * banner 
 */
@@ -714,6 +791,14 @@ input[type="radio"]:checked {
 }
 
 @media screen and (min-width:  768px) {
+    .language-picker {
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 65%;
+        width: 35%;
+    }
     .tiles {
         display: grid;
         grid-template-columns: 1fr 1fr;
