@@ -214,17 +214,31 @@ input[type="radio"]:checked {
     margin: 0;
 }
 .nav-main li {
-    display: inline-block;
+    display: flex;
+    flex-wrap: nowrap;
     font-family: var(--font-SignalMono);
     font-size: .82rem;
     text-transform: uppercase;
     letter-spacing: .25rem;
-    padding: .5rem 0;
     margin: .25rem 1rem;
 }
-.nav-main li:hover,
-.nav-main li:active {
+.nav-main li span {
+    padding: .5rem 0;
+
+}
+.nav-main li:hover span,
+.nav-main li:active span {
     border-bottom: 1px solid var(--color-brand-orange);
+}
+.dropdown {
+    align-items: center;
+}
+.dropdown > svg {
+    margin-left: .5rem;
+    transition: rotate 1s;
+}
+.dropdown:hover > svg {
+    rotate: 180deg;
 }
 
 /*
