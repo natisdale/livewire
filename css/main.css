@@ -551,6 +551,10 @@ input[type="radio"]:checked {
     flex: 0 0 100%;
     width: 100%;
 }
+.slide .carousel__prev,
+.slide .carousel__next {
+    visibility: hidden;
+}
 .slide .button {
     margin: 1rem .25rem;
 }
@@ -968,6 +972,10 @@ input[type="radio"]:checked {
     }
     .carousel__prev,
     .carousel__next {
+        visibility: visible;
+    }
+    .slide:hover .carousel__prev,
+    .slide:hover .carousel__next {
         visibility: visible;
     }
     .feature {
