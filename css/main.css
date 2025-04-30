@@ -921,8 +921,13 @@ input[type="radio"]:checked {
     }
     .large {
         visibility: visible;
-        position: inherit;
-        height: auto;
+        position:static;
+        height: 2rem;
+        width: 10rem;
+    }
+    .logo .large {
+        visibility: visible;
+
     }
     .nav-main__sub-menu {
         height: 480px;
