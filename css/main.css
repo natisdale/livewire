@@ -675,10 +675,12 @@ input[type="radio"]:checked {
     width: 2rem;
     height: 1rem;
     position: absolute;
-    right: 1rem
+    right: .5rem;
+    top: .5rem;
+    visibility: hidden;
 }
 .stay-informed button > svg {
-    height: 1rem;
+    height: 2rem;
     fill: var(--color-black);
 }
 .stay-informed__form {
@@ -694,6 +696,9 @@ input[type="radio"]:checked {
 .stay-informed__entry {
     border: 2px solid red;
     text-transform: uppercase;
+}
+.stay-informed__entry:valid + button {
+    visibility: visible;
 }
 .stay-informed__socials  {
      justify-self: center;
