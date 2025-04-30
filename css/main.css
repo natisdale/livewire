@@ -672,12 +672,17 @@ input[type="radio"]:checked {
 .stay-informed button {
     background: none;
     border: none;
-    width: 2rem;
-    height: 1rem;
+    width: 3rem;
+    height: 3rem;
     position: absolute;
-    right: .5rem;
-    top: .5rem;
+    right: 0;
+    align-items: center;
+}
+.stay-informed__entry + button {
     visibility: hidden;
+}
+.stay-informed__entry:valid + button {
+    visibility: visible;
 }
 .stay-informed button > svg {
     height: 2rem;
@@ -696,9 +701,7 @@ input[type="radio"]:checked {
 .stay-informed__entry {
     border: 2px solid red;
     text-transform: uppercase;
-}
-.stay-informed__entry:valid + button {
-    visibility: visible;
+    padding: .5rem;
 }
 .stay-informed__socials  {
      justify-self: center;
@@ -765,7 +768,9 @@ input[type="radio"]:checked {
 }
 .page-footer .stay-informed__entry {
     border: none;
-    padding: 1rem;
+}
+.page-footer .stay-informed__entry + button svg {
+    height: 1.8rem;
 }
 /*
 * site-map
