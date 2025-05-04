@@ -11,5 +11,5 @@ This is a project for the Web Development course at the Minneapolis College of A
 
 ## Author
 
-Project Code: [Nathan Tisdale]([www.tisdale.info](https://github.com/natisdale))
+Project Code: [Nathan Tisdale](www.tisdale.info](https://github.com/natisdale)
 Source Design: [LiveWire Motorcycles](https://www.livewire.com)
