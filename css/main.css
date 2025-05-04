@@ -954,6 +954,9 @@ input[type="radio"]:checked {
     .sub-menu__category--active a {
         color: var(--color-black);
     }
+    .sub-menu__categories {
+        height: 48rem;
+    }
     .sub-menu__categories .sub-menu__category:last-child {
         border-bottom: none;
     }
@@ -985,7 +988,6 @@ input[type="radio"]:checked {
         left: 0;
         right: 0;
         visibility: visible;
-        height: auto;
     }
     .app-list {
         display: flex;
