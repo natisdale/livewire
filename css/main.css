@@ -291,7 +291,6 @@ input[type="radio"]:checked {
     position: relative;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
     color: var(--color-nimbus-gray);
     padding-top: 5rem;
@@ -882,7 +881,6 @@ input[type="radio"]:checked {
         position: relative;
         top: 0;
         right: 0;
-        bottom: 0;
         left: 65%;
         width: 35%;
     }
