@@ -965,6 +965,12 @@ input[type="radio"]:checked {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .sub-menu__panel--locations {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
     .dropdown .nav-main__sub-menu {
         justify-self: unset;
         position: absolute;
