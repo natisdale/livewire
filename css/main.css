@@ -869,7 +869,14 @@ input[type="radio"]:checked {
         cursor: pointer;
     }
 }
-
+@media screen and (max-width: 1200px) {
+    .nav-main.large {
+        display: none;
+    }
+    .nav-main.small {
+        display: flex;
+    }
+}
 @media screen and (min-width:  768px) {
     .language-picker {
         position: relative;
