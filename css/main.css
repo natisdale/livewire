@@ -853,6 +853,25 @@ input[type="radio"]:checked {
     border: 1px solid #ccc;
 }
 
+/*
+* side-bar
+*/
+.components {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+}
+.side-bar {
+    background-color: var(--color-black);
+    padding: 2rem;
+}
+.side-bar ul {
+    list-style: none;
+}
+.side-bar a {
+    color: var(--color-white);
+    line-height: 2.5rem;
+}
+
 @media screen and (max-width: 1199px){
      /*
     * Accordian
